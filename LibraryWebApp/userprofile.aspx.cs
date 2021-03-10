@@ -101,7 +101,7 @@ namespace LibraryWebApp
                 }
                 else
                 {
-                    Response.Write("<script>alert('Invaid entry');</script>");
+                    Response.Write("<script>alert('Неверные данные');</script>");
                 }
 
             }
