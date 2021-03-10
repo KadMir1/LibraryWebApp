@@ -24,7 +24,7 @@ namespace LibraryWebApp
             {
                 if(checkIfIssueEntryExist())
                 {
-                    Response.Write("<script>alert('This member already has this book');</script>");
+                    Response.Write("<script>alert('У этого клиента уже есть книга');</script>");
 
                 }
                 else
@@ -50,7 +50,7 @@ namespace LibraryWebApp
                 }
                 else
                 {
-                    Response.Write("<script>alert('This Entry does not exist');</script>");
+                    Response.Write("<script>alert('Этой записи не сущеуствует');</script>");
                 }
 
             }
@@ -87,7 +87,7 @@ namespace LibraryWebApp
                     cmd.ExecuteNonQuery();
                     con.Close();
 
-                    Response.Write("<script>alert('Book Returned Successfully');</script>");
+                    Response.Write("<script>alert('Книгу успешно вернули');</script>");
                     GridView1.DataBind();
 
                     con.Close();
@@ -95,7 +95,7 @@ namespace LibraryWebApp
                 }
                 else
                 {
-                    Response.Write("<script>alert('Error - Invalid details');</script>");
+                    Response.Write("<script>alert('Ошибка');</script>");
                 }
 
             }
